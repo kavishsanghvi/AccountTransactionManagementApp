@@ -44,15 +44,10 @@ The application manages the following data structures:
    - Ensure that each operation updates the current balance of the respective account and maintains database consistency.
    - Validate overdraft limits to prevent transactions that exceed the account's balance minus the overdraft limit.
 
-3. **Unit Testing**:
-   - Develop unit tests for all CRUD operations to ensure correct functionality.
-   - Validate business logic to confirm that account balances are updated accurately with each transaction.
-   - Handle error scenarios, such as attempting to delete non-existent transactions or adding invalid entries.
-
-4. **Data Seeding**:
+3. **Data Seeding**:
    - Read initial data from a provided JSON file into the database on the first run.
 
-5. **Export to Excel**:
+4. **Export to Excel**:
    - Enable exporting the current state of accounts and transactions to a human-readable Excel file.
 
 ## Setup Instructions
@@ -86,15 +81,6 @@ The application manages the following data structures:
 ## Usage
 
 Once the application is running, you can use the API endpoints to manage accounts and transactions. Refer to the API documentation for detailed instructions on available operations.
-
-## Unit Testing
-
-To run the unit tests, execute the following command:
-```bash
-dotnet test
-```
-
-Ensure that all tests pass successfully to validate the functionality and business logic of the application.
 
 ## Exporting Data to Excel
 
